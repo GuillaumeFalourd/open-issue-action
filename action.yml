@@ -1,6 +1,6 @@
 name: 'Open Issue Action'
 
-description: 'Github Action to open a new issue on any Github repository that the PAT has access to 🤖'
+description: 'Github Action to open a new issue on ANY Github repository that the Personal Access Token (PAT) has access to 🤖'
 
 inputs:
     repo-owner:
