@@ -1,0 +1,34 @@
+name: 'Open Issue Action'
+
+description: 'Github Action to open a new issue on any Github repository that the PAT has access to 🤖'
+
+inputs:
+    repo-owner:
+        description: 'Owner of the new issue repository'
+        required: true
+    repo-name:
+        description: 'Name of the new issue repository'
+        required: true
+    issue-title:
+        description: 'Issue title'
+        required: true
+    issue-body:
+        description: 'Issue message body'
+        required: true
+    access-token:
+        description: 'Personal Access Token (https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)'
+        required: true
+
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.access-token }}
+        - ${{ inputs.repo-owner }}
+        - ${{ inputs.repo-name }}
+        - ${{ inputs.issue-title }}
+        - ${{ inputs.issue-body }}
+
+branding:
+    icon: 'external-link'
+    color: 'blue'

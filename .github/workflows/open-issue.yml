@@ -1,0 +1,19 @@
+name: Open Issue Workflow
+
+on:
+  issues: 
+    types: [opened, labeled]
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Open new ISSUE on GuillaumeFalourd/poc-github-actions repository
+      if: contains(github.event.label.name , 'documentation')
+      uses: GuillaumeFalourd/open-issue-action@main
+      with:
+        access-token: $GITHUB_TOKEN
+        repo-owner: GuillaumeFalourd
+        repo-name: poc-github-actions
+        issue-title: New Automated Issue
+        issue-body: This is a test openning a new ISSUE through the open-issue-action!
