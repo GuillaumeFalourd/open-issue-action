@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Open new ISSUE on GuillaumeFalourd/poc-github-actions repository
-      if: contains(github.event.label.name , 'test')
+      if: contains(github.event.label.name , 'documentation')
       uses: GuillaumeFalourd/open-issue-action@main
       with:
         access-token: ${{ secrets.ACCESS_TOKEN }}
