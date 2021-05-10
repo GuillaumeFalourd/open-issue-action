@@ -2,6 +2,8 @@
 
 [![Open Issue Workflow](https://github.com/GuillaumeFalourd/open-issue-action/actions/workflows/open-issue.yml/badge.svg)](https://github.com/GuillaumeFalourd/open-issue-action/actions/workflows/open-issue.yml)
 
+![Title](https://user-images.githubusercontent.com/22433243/117715515-c146ca80-b1ae-11eb-9fe9-de3cc7f631ff.png)
+
 Github Action to open a new issue on any Github repository that the [PAT](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) has access to 🤖
 
 ## How to use this action?
