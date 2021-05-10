@@ -2,7 +2,7 @@ name: Open Issue Workflow
 
 on:
   issues: 
-    types: [labeled]
+    types: [opened, labeled]
 
 jobs:
   job:
