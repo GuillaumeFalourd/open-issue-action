@@ -33,6 +33,10 @@ jobs:
 
 ```
 
+## How does it work?
+
+This action will execute [this python automation](https://github.com/GuillaumeFalourd/formulas-github/blob/master/github/create/issue/src/formula/formula.py) to open a new ISSUE with the informed `title` and `body` on the informed repository.
+
 ## Licensed
 
 This repository uses the [Apache License 2.0](https://github.com/GuillaumeFalourd/aws-cliaction/blob/main/LICENSE)
