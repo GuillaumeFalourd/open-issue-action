@@ -4,7 +4,7 @@
 
 ![Title](https://user-images.githubusercontent.com/22433243/117715515-c146ca80-b1ae-11eb-9fe9-de3cc7f631ff.png)
 
-Github Action to open a new issue on any Github repository that the [PAT](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) has access to 🤖
+Github Action to open a new issue on **ANY** Github repository that the [**PAT**](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) has access to. 🤖
 
 ## How to use this action?
 
