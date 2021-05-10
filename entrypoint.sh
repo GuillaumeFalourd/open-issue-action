@@ -3,9 +3,6 @@
 echo "🔒 Configure Github Access Token"
 sudo rit set credential --provider=github --fields=token --values="$1"
 
-echo "Check Github Access Token"
-sudo rit list credential
-
 echo "🔄 Importing Github API formula repository"
 sudo rit add repo --provider=Github --name=formulas-github --repoUrl=https://github.com/GuillaumeFalourd/formulas-github --priority=0
 
