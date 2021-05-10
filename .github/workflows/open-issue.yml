@@ -12,7 +12,7 @@ jobs:
       if: contains(github.event.label.name , 'documentation')
       uses: GuillaumeFalourd/open-issue-action@main
       with:
-        access-token: $ {{ secrets.ACCESS_TOKEN }}
+        access-token: ${{ secrets.ACCESS_TOKEN }}
         repo-owner: GuillaumeFalourd
         repo-name: poc-github-actions
         issue-title: New Automated Issue
