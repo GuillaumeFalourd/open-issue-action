@@ -17,8 +17,8 @@ Field | Mandatory | Observation
 **repo-name** | YES | Ex: `open-issue-action`
 **issue-title** | YES | Can use the context or customize
 **issue-body** | YES | Can use the context or customize
-**issue-labels** | NO | Needs to exist on the new repository \_(Separated with coma ',' if more than one)_
-**issue-assignees** | NO | Needs to have access to the new repository \_(Separated with coma ',' if more than one)_
+**issue-labels** | NO | Needs to exist on the new repository\ Separated with coma ',' if more than one)
+**issue-assignees** | NO | Needs to have access to the new repository\ Separated with coma ',' if more than one)
 
 ### Example
 
