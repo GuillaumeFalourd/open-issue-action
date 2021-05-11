@@ -8,7 +8,21 @@ Github Action to open a new issue on **ANY** Github repository that the [**PAT**
 
 ## How to use this action?
 
-Example using `if conditionnal` to open a new issue on **ANOTHER** repository when an issue with a specific label `documentation` is *opened* or *labeled* on the **CURRENT** repository.
+### Action inputs
+
+Field | Mandatory | Observation
+------------ | ------------  | -------------
+**access-token** | YES | [How to create a PAT](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
+**repo-owner** | YES | Ex: `octocat`
+**repo-name** | YES | Ex: `open-issue-action`
+**issue-title** | YES | Can use the context or customize
+**issue-body** | YES | Can use the context or customize
+**issue-labels** | NO | Needs to exist on the new repository _(Separated with coma ',' if more than one)_
+**issue-assignees** | NO | Needs to have access to the new repository _(Separated with coma ',' if more than one)_
+
+### Example
+
+Using `if conditionnal` to open a new issue on **ANOTHER** repository when an issue with a specific label `documentation` is *opened* or *labeled* on the **CURRENT** repository.
 
 ```bash
 name: Open Issue Workflow
@@ -28,8 +42,10 @@ jobs:
         access-token: ${{ secrets.ACCESS_TOKEN }}
         repo-owner: GuillaumeFalourd
         repo-name: poc-github-actions
-        issue-title: New Automated Issue
-        issue-body: This is a test openning a new ISSUE through the open-issue-action!
+        issue-title: Custom title for new ISSUE
+        issue-body: Custom message for new ISSUE
+        issue-labels: bug
+        issue-assignees: <username>
 
 ```
 
