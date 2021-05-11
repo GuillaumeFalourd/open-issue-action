@@ -13,8 +13,8 @@ jobs:
       run: echo "$GITHUB_CONTEXT"
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
-        
-    - name: Open new ISSUE on GuillaumeFalourd/poc-github-actions repository
+
+    - name: Open new ISSUE on GuillaumeFalourd/poc-github-actions repository WITH label + assignee
       if: contains(github.event.label.name , 'documentation')
       uses: GuillaumeFalourd/open-issue-action@main
       with:
@@ -25,3 +25,13 @@ jobs:
         issue-body: This is a test openning a new ISSUE through the open-issue-action!
         issue-labels: documentation # Not mandatory
         issue-assignees: GuillaumeFalourd # Not mandatory
+    
+    - name: Open new ISSUE on GuillaumeFalourd/formulas-github repository WITHOUT label + assignee
+      if: contains(github.event.label.name , 'documentation')
+      uses: GuillaumeFalourd/open-issue-action@main
+      with:
+        access-token: ${{ secrets.ACCESS_TOKEN }}
+        repo-owner: GuillaumeFalourd
+        repo-name: formulas-github
+        issue-title: ${{ github.event.issue.title }}
+        issue-body: This is a test openning a new ISSUE through the open-issue-action!
