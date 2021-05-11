@@ -17,8 +17,8 @@ Field | Mandatory | Observation
 **repo-name** | YES | Ex: `open-issue-action`
 **issue-title** | YES | Can use the context or customize
 **issue-body** | YES | Can use the context or customize
-**issue-labels** | NO | Labels **need to exist** on the new repository. <br/> _Separated with coma ',' if more than one_
-**issue-assignees** | NO | Assignees **need to have access** to the new repositor. <br/> _Separated with coma ',' if more than one_
+**issue-labels** | NO | Labels **need to exist** on the new repository. <br/> _Separated with coma `,` if more than one_
+**issue-assignees** | NO | Assignees **need to have access** to the new repositor. <br/> _Separated with coma `,` if more than one_
 
 ### Example
 
@@ -44,8 +44,8 @@ jobs:
         repo-name: poc-github-actions
         issue-title: Custom title for new ISSUE
         issue-body: Custom message for new ISSUE
-        issue-labels: bug
-        issue-assignees: <username>
+        issue-labels: bug # Not mandatory
+        issue-assignees: <username> # Not mandatory
 
 ```
 
