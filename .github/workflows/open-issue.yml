@@ -8,8 +8,7 @@ jobs:
   job:
     runs-on: ubuntu-latest
     steps:
-    # Print the whole Github Context to the logs to view more details.
-    - name: View the github context
+    - name: Show the Github context for the triggered event
       run: echo "$GITHUB_CONTEXT"
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
@@ -22,7 +21,7 @@ jobs:
         repo-owner: GuillaumeFalourd
         repo-name: poc-github-actions
         issue-title: ${{ github.event.issue.title }}
-        issue-body: This is a test openning a new ISSUE through the open-issue-action!
+        issue-body: New ISSUE referring to ${{ github.event.issue.html_url }} opened through the open-issue-action.
         issue-labels: documentation # Not mandatory
         issue-assignees: GuillaumeFalourd # Not mandatory
     
@@ -33,5 +32,5 @@ jobs:
         access-token: ${{ secrets.ACCESS_TOKEN }}
         repo-owner: GuillaumeFalourd
         repo-name: formulas-github
-        issue-title: ${{ github.event.issue.title }}
-        issue-body: This is a test openning a new ISSUE through the open-issue-action!
+        issue-title: Custom title for new ISSUE
+        issue-body: Custom message for new ISSUE
