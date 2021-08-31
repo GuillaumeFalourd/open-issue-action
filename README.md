@@ -1,6 +1,6 @@
 # Open Issue Action
 
-<a href="https://github.com/search?q=GuillaumeFalourd+open-issue-action+path%3A.github%2Fworkflows+language%3AYAML&type=code" target="_blank" title="Public workflows that use this action."><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-git-master.endbug.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3DGuillaumeFalourd%2Fopen-issue-action%26badge%3Dtrue" alt="Public workflows that use this action."></a>
+[![Public workflows that use this action.](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-endbug.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3DGuillaumeFalourd%2Fopen-issue-action%26badge%3Dtrue)](https://github.com/search?o=desc&q=GuillaumeFalourd+open-issue-action+path%3A.github%2Fworkflows+language%3AYAML&s=&type=Code) 
 
 [![Open Issue Workflow](https://github.com/GuillaumeFalourd/open-issue-action/actions/workflows/open-issue.yml/badge.svg)](https://github.com/GuillaumeFalourd/open-issue-action/actions/workflows/open-issue.yml)
 
